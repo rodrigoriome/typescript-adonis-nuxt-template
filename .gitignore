@@ -6,3 +6,5 @@ coverage
 .env
 tmp
 .eslintcache
+.nuxt
+public

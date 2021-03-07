@@ -10,5 +10,20 @@
   "extends": ["@dognpony"],
   "rules": {
     "indent": ["warn", 2]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "extends": ["@dognpony/eslint-config/nuxt"],
+      "rules": {
+        "vue/html-indent": ["warn", 2, {
+          "alignAttributesVertically": false
+        }],
+        "vue/script-indent": ["warn", 2, {
+          "baseIndent": 1,
+          "switchCase": 1
+        }]
+      }
+    }
+  ]
 }
